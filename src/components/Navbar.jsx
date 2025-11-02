@@ -3,6 +3,13 @@ import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
+// Import your logo assets - adjust the paths based on your project structure
+import logoLight from "../assets/atlas-logo.png"; // For transparent background
+import logoDark from "../assets/atlas-logo.png";   // For white background
+// Alternative if using SVG:
+// import { ReactComponent as LogoLight } from "../assets/images/logo-light.svg";
+// import { ReactComponent as LogoDark } from "../assets/images/logo-dark.svg";
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,9 +38,10 @@ export default function Navigation() {
   // Dynamic classes based on state
   const navBackground = isHome && !isScrolled ? "bg-transparent" : "bg-white/95 backdrop-blur-md shadow-sm";
   const textColor = isHome && !isScrolled ? "text-white" : "text-gray-800";
-  const logoColor = isHome && !isScrolled ? "text-white" : "text-blue-900";
-  const logoSubColor = isHome && !isScrolled ? "text-blue-200" : "text-blue-600";
   const taglineColor = isHome && !isScrolled ? "text-white/90" : "text-gray-600";
+
+  // Determine which logo to use
+  const currentLogo = isHome && !isScrolled ? logoLight : logoDark;
 
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${navBackground}`}>
@@ -46,14 +54,14 @@ export default function Navigation() {
               className="flex items-center group"
               onClick={() => setIsOpen(false)}
             >
-              <div className="text-2xl font-bold tracking-tight">
-                <span className={`transition-colors duration-300 ${logoColor} group-hover:text-blue-600`}>
-                  ATLAS
-                </span>
-                <span className={`transition-colors duration-300 ${logoSubColor} ml-1 group-hover:text-blue-400`}>
-                  VENTURES
-                </span>
-              </div>
+              {/* Logo Image */}
+              <img 
+                src={currentLogo} 
+                alt="Atlas Ventures - Financial & Legal Solutions"
+                className="h-12 w-auto transition-opacity duration-300 group-hover:opacity-90"
+                // For SVG alternative:
+                // <LogoLight className="h-12 w-auto transition-opacity duration-300 group-hover:opacity-90" />
+              />
             </NavLink>
             <p className={`${taglineColor} text-xs font-light tracking-wide mt-1 transition-colors duration-300`}>
               Financial & Legal Solutions
