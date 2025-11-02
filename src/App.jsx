@@ -20,7 +20,7 @@ export default function App() {
         <Routes>
           {/* Home page */}
           <Route
-            path="/home"
+            path="/"
             element={
               <>
                 <Hero />
