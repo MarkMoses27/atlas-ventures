@@ -102,15 +102,7 @@ export default function OurTeam() {
           })}
         </div>
 
-        {/* Optional CTA */}
-        <div className="text-center mt-16">
-          <p className="text-gray-600 mb-6">
-            Ready to work with experienced professionals?
-          </p>
-          <button className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-            Get in Touch
-          </button>
-        </div>
+      
       </div>
     </section>
   );

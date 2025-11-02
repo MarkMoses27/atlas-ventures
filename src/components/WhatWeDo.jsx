@@ -12,49 +12,49 @@ export default function WhatWeDo() {
       icon: <FileText className="w-12 h-12" />,
       title: "Debt Collection",
       description: "Our experienced team specializes in the efficient and ethical collection of outstanding debts, ensuring the recovery of funds while preserving positive client relationships.",
-      link: "#debt-collection"
+      link: "/services"
     },
     {
       icon: <Gavel className="w-12 h-12" />,
       title: "Auctioneering",
       description: "Our skilled auctioneers expertly manage the sale of assets, maximizing returns for our clients through well-executed auctions.",
-      link: "#auctioneering"
+      link: "/services"
     },
     {
       icon: <Home className="w-12 h-12" />,
       title: "Repossession",
       description: "We provide swift and professional repossession services, securing valuable assets and returning them to rightful ownership.",
-      link: "#repossession"
+      link: "/services"
     },
     {
       icon: <Users className="w-12 h-12" />,
       title: "Court Brokerage",
       description: "Professional legal representation and court-related services to support your legal proceedings and documentation needs.",
-      link: "#court-brokerage"
+      link: "/services"
     },
     {
       icon: <Building className="w-12 h-12" />,
       title: "Rent Collection",
       description: "Efficient rent collection services that help property owners maintain steady cash flow and manage tenant relationships.",
-      link: "#rent-collection"
+      link: "/services"
     },
     {
       icon: <Shield className="w-12 h-12" />,
       title: "Risk Management",
       description: "We specialize in risk mitigation, offering strategies and solutions to safeguard investments and minimize potential threats.",
-      link: "#risk-management"
+      link: "/services"
     },
     {
       icon: <TrendingUp className="w-12 h-12" />,
       title: "Credit Management",
       description: "Our Credit Management service helps businesses and individuals make informed credit-related decisions, mitigate risks, and optimize financial stability.",
-      link: "#credit-management"
+      link: "/services"
     },
     {
       icon: <FileCheck className="w-12 h-12" />,
       title: "Conveyancing",
       description: "Professional property transfer and legal documentation services ensuring smooth and compliant real estate transactions.",
-      link: "#conveyancing"
+      link: "/services"
     }
   ];
 
@@ -137,7 +137,7 @@ export default function WhatWeDo() {
             </a>
 
             <a 
-              href="#how-we-work" 
+              href="/how-we-work" 
               className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-all duration-300"
             >
               How We Work
