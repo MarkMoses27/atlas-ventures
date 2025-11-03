@@ -2,11 +2,11 @@
 import React from "react";
 
 import Debt__Image from "../../assets/debt.jpg";
-import Auction__Image from "../../assets/auction.svg";
-import Repossession__Image from "../../assets/repossession.jpg";
+import Auction__Image from "../../assets/auctioneering.jpg";
+import Repossession__Image from "../../assets/repossession-home.jpg";
 import Court__Image from "../../assets/court.jpg";
 import Rent__Image from "../../assets/rent.jpg";
-import Risk__Image from "../../assets/risk.jpg";
+import Risk__Image from "../../assets/risk-management.jpg";
 import Credit__Image from "../../assets/credit.jpg";
 import Conveyancing__Image from "../../assets/convey.jpg";
 
