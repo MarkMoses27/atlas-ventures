@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImage from "../../assets/about.svg"; // adjust if filename differs
+import AboutImage from "../../assets/about.jpg"; // adjust if filename differs
 import { CheckCircle } from "lucide-react";
 
 /**
